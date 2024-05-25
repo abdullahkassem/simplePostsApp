@@ -1,0 +1,28 @@
+@import 'variables';
+
+nav{
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    bottom: 1%;
+    left: 5%;
+    
+    width: 90%;
+    justify-content: space-around;
+    margin: 0 ;
+    background-color: $bottomNavColor;
+    height: 7%;
+    padding: 2% 0;
+    border-radius: 15px;
+    
+    button{
+        flex: auto;
+        background-color: transparent;
+        border: none;
+        .navLogoImg{
+            fill: white;
+            stroke: white;
+        }
+    }
+    
+}
