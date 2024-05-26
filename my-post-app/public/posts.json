@@ -1,0 +1,200 @@
+{
+    "posts": [
+        {
+            "text": "Just generated this awesome post using large language models! #machinelearning #socialmedia",
+            "created_at": "2024-05-26T00:10:00",
+            "image_link": "",
+            "user": {
+                "username": "generated_user_123",
+                "profile_picture": "https://picsum.photos/seed/1/200/"
+            },
+            "engagement": {
+                "likes": 23,
+                "comments": 5,
+                "shares": 1
+            }
+        },
+        {
+            "text": "Just finished an amazing hike! Feeling refreshed and invigorated by nature.",
+            "created_at": "2024-05-25T18:00:00+02:00",
+            "image_link": "https://picsum.photos/seed/2/200/",
+            "user": {
+                "username": "adventure_seeker",
+                "profile_picture": "https://picsum.photos/seed/3/200/"
+            },
+            "engagement": {
+                "likes": 123,
+                "comments": 15,
+                "shares": 7
+            }
+        },
+        {
+            "text": "Happy birthday to my best friend!  Here's to many more years of laughter and fun.",
+            "created_at": "2024-05-24T12:30:00+09:00",
+            "image_link": "https://example.com/birthday_celebration.jpg",
+            "user": {
+                "username": "true_friend",
+                "profile_picture": "https://example.com/profile_pic2.jpg"
+            },
+            "engagement": {
+                "likes": 456,
+                "comments": 32,
+                "shares": 18
+            }
+        },
+        {
+            "text": "Looking for some delicious recipe recommendations! What are you cooking this weekend?",
+            "created_at": "2024-05-23T09:45:00-04:00",
+            "image_link": "",
+            "user": {
+                "username": "foodie",
+                "profile_picture": "https://example.com/profile_pic3.jpg"
+            },
+            "engagement": {
+                "likes": 78,
+                "comments": 54,
+                "shares": 2
+            }
+        },
+        {
+            "text": "Feeling grateful for all the amazing people in my life. ❤️",
+            "created_at": "2024-05-22T20:15:00+01:00",
+            "image_link": "https://example.com/group_photo.jpg",
+            "user": {
+                "username": "blessed",
+                "profile_picture": "https://example.com/profile_pic4.jpg"
+            },
+            "engagement": {
+                "likes": 231,
+                "comments": 8,
+                "shares": 3
+            }
+        },
+        {
+            "text": "Just adopted the cutest puppy ever!    #doglover #newpet",
+            "created_at": "2024-05-20T15:42:00-03:00",
+            "image_link": "https://example.com/puppy_picture.jpg",
+            "user": {
+                "username": "furry_friend",
+                "profile_picture": "https://example.com/profile_pics/avatar6.png"
+            },
+            "engagement": {
+                "likes": 521,
+                "comments": 87,
+                "shares": 43
+            }
+        },
+        {
+            "text": "Learning a new skill this week - coding basics!  #coding #programming",
+            "created_at": "2024-05-19T08:10:00+08:00",
+            "image_link": "https://example.com/computer_code.jpg",
+            "user": {
+                "username": "tech_savvy",
+                "profile_picture": "https://example.com/profile_pics/avatar7.png"
+            },
+            "engagement": {
+                "likes": 38,
+                "comments": 4,
+                "shares": 1
+            }
+        },
+        {
+            "text": "Celebrating a work anniversary today!    #worklife #achievement",
+            "created_at": "2024-05-18T17:30:00-05:00",
+            "image_link": "https://example.com/office_party.jpg",
+            "user": {
+                "username": "career_climber",
+                "profile_picture": "https://example.com/profile_pics/avatar8.png"
+            },
+            "engagement": {
+                "likes": 92,
+                "comments": 12,
+                "shares": 5
+            }
+        },
+        {
+            "text": "Caught a beautiful sunset tonight!  #naturephotography #sunset",
+            "created_at": "2024-05-17T06:00:00+04:00",
+            "image_link": "https://example.com/sunset_photo.jpg",
+            "user": {
+                "username": "nature_lover",
+                "profile_picture": "https://example.com/profile_pics/avatar9.png"
+            },
+            "engagement": {
+                "likes": 173,
+                "comments": 29,
+                "shares": 8
+            }
+        },
+        {
+            "text": "Finally finished this massive puzzle! Feeling accomplished. #puzzles #challenge",
+            "created_at": "2024-05-16T23:15:00-02:00",
+            "image_link": "https://example.com/completed_puzzle.jpg",
+            "user": {
+                "username": "puzzle_master",
+                "profile_picture": "https://example.com/profile_pics/avatar10.png"
+            },
+            "engagement": {
+                "likes": 48,
+                "comments": 7,
+                "shares": 2
+            }
+        },
+        {
+            "text": "Just saw the new sci-fi movie, Mindbender!    Definitely worth checking out for the mind-blowing plot twist. #scifi #movies",
+            "created_at": "2024-05-27T14:00:00+03:00",
+            "image_link": "https://example.com/movie_poster_mindbender.jpg",
+            "user": {
+                "username": "movie_buff",
+                "profile_picture": "https://example.com/profile_pics/avatar11.png"
+            },
+            "engagement": {
+                "likes": 84,
+                "comments": 18,
+                "shares": 4
+            }
+        },
+        {
+            "text": "Exploring the bustling streets of Tokyo!    Stay tuned for more updates on my Japan travel blog! #travel #japan",
+            "created_at": "2024-05-27T05:45:00-08:00",
+            "image_link": "https://example.com/tokyo_street_photo.jpg",
+            "user": {
+                "username": "wandering_soul",
+                "profile_picture": "https://example.com/profile_pics/avatar12.png"
+            },
+            "engagement": {
+                "likes": 127,
+                "comments": 11,
+                "shares": 7
+            }
+        },
+        {
+            "text": "Made these cute planters from recycled jars!    #diy #gardening",
+            "created_at": "2024-05-26T20:15:00+07:00",
+            "image_link": "https://example.com/diy_planters.jpg",
+            "user": {
+                "username": "crafty_cat",
+                "profile_picture": "https://example.com/profile_pics/avatar13.png"
+            },
+            "engagement": {
+                "likes": 210,
+                "comments": 34,
+                "shares": 12
+            }
+        },
+        {
+            "text": "Did you know today is National Rescue Dog Day?    Consider donating to your local animal shelter to help homeless pups find their forever homes! #rescuedog #nationalrescuedogday",
+            "created_at": "2024-05-26T11:30:00-04:00",
+            "image_link": "https://example.com/shelter_dog_photo.jpg",
+            "user": {
+                "username": "pawsitive_vibes",
+                "profile_picture": "https://example.com/profile_pics/avatar14.png"
+            },
+            "engagement": {
+                "likes": 342,
+                "comments": 57,
+                "shares": 29
+            }
+        }
+    ]
+}

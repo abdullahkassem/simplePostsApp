@@ -17,7 +17,8 @@ This will allow me to acheive client side navigation, while still being able to 
 
 - Since no new doccuments will be loaded during page navigation, that means that my app still qualifies to be a SPA.
 
-<!-- I got the getting started from https://github.com/ixartz/Next-js-Boilerplate/blob/main/README.md?plain=1 -->
+
+<!-- I got the getting started section from https://github.com/ixartz/Next-js-Boilerplate/blob/main/README.md?plain=1 -->
 
 ### Requirements
 

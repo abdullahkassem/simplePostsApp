@@ -1,0 +1,25 @@
+.postHeader{
+    display: grid;
+    // grid-template-rows: 1fr 1fr;
+    // grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "pp usrName options"
+    "pp date options";
+    font-size: large;
+    img{
+        border-radius: 50%;
+        grid-area: pp;
+    }
+    .userName{
+        grid-area: usrName;
+    }
+    .datePosted{
+        grid-area: date;
+    }
+    .options{
+        grid-area: options;
+        font-size: 9vw;
+        align-self: self-end;
+        justify-self: center;
+        margin-bottom: 5px;
+    }
+}

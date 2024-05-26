@@ -1,9 +1,11 @@
-import React from 'react'
+import Post from "./Post";
 
-export default function Dummy() {
+
+export default function Dummy({data}) {
+
   return (
     <div>
-      This is a Home Page.
+      <Post data={data[0]}/>      
     </div>
   )
 }
