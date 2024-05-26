@@ -32,9 +32,10 @@ export default function PostContent({imageLink,engagement,caption}) {
       </div>)}
       
       <div className="engagmentBar">
-        <LikeSVG width="20px" height="20px"/> {engagement.likes} 
-        <CommentSVG width="20px" height="20px"/> {engagement.comments} 
-        <ShareSVG width="20px" height="20px"/> {engagement.shares}
+      
+        <LikeSVG className="engageSVG" width="20px" height="20px"/> {engagement.likes} 
+        <CommentSVG className="engageSVG" width="20px" height="20px"/> {engagement.comments} 
+        <ShareSVG className="engageSVG" width="20px" height="20px"/> {engagement.shares}
       </div>
 
       <div className="postText">

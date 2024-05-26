@@ -1,4 +1,5 @@
 import Image from "next/image"
+import THreeDotsSVG from "../../public/ThreeDotsSVG.jsx"
 
 // gets date passed since passed date
 function getHoursPassed(dateStr) {
@@ -21,7 +22,7 @@ export default function PostHeader({userName,date,profilePic}) {
   
     
     const hoursPassed = getHoursPassed(date);
-    console.log("hoursPassed: ",hoursPassed);
+    
     let dateString = "Cannot determine time of post.";
     
     if(hoursPassed == 0)
@@ -42,7 +43,9 @@ export default function PostHeader({userName,date,profilePic}) {
             alt="Profile Picture."/>
         <div className="userName">{userName}</div>
         <div className="datePosted">{dateString}</div>
-        <div className="options">...</div>      
+        <div className="options">
+            <THreeDotsSVG/>
+        </div>      
     </div>
   )
 }

@@ -5,12 +5,26 @@ $unusedColor: #cec6e4;
 
 $bottomNavColor: $mainColor;
 $lightGray: rgba(0, 0, 0, 0.651);
+$selectedColor: #e0e0e0;
 
 $postImageHeight: 300;
 $postImageWidth: 300;
+
+$headerHeight: 10vh;
 
 :export {
     unusedColor:$unusedColor;
     postImageHeight:$postImageHeight;
     postImageWidth:$postImageWidth;
+}
+
+@mixin makeClickable{
+    &:active{
+        background-color: $selectedColor;
+    }
+
+    &:hover{
+        background-color: $selectedColor;
+        cursor: pointer;
+    }
 }

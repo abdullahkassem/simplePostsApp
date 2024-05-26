@@ -14,8 +14,6 @@ export default function Navbar() {
   let favouriteColor = styleVar.unusedColor;
 
 
-  console.log("homeColor",homeColor);
-
   if(homePressed){
     homeColor="red";
     favouriteColor=styleVar.unusedColor;

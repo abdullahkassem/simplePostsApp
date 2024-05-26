@@ -1,8 +1,10 @@
 @import 'navbar';
 @import 'post';
+@import 'header';
 
 body{
     // margin: 0;
+    margin-top: $headerHeight;
     padding-bottom: 15%;
     font-size: 2em;
 }
