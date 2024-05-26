@@ -1,0 +1,16 @@
+$darkGrey: #373737;
+$mainColor: #593ca1;
+$heartColor: #ef5a5a;
+$unusedColor: #cec6e4;
+
+$bottomNavColor: $mainColor;
+$lightGray: rgba(0, 0, 0, 0.651);
+
+$postImageHeight: 300;
+$postImageWidth: 300;
+
+:export {
+    unusedColor:$unusedColor;
+    postImageHeight:$postImageHeight;
+    postImageWidth:$postImageWidth;
+}

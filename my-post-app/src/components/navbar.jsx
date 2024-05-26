@@ -4,21 +4,24 @@ import HeartSVG from "../../public/HeartSVG";
 import HomeSVG from "../../public/HomeSVG";
 import { useState } from "react";
 
-
+import styleVar from '@/styles/_variables.module.scss'
 
 export default function Navbar() {
 
   const [homePressed,setHomePressed] =useState(null);
 
-  let homeColor = "white";
-  let favouriteColor = "white";
+  let homeColor = styleVar.unusedColor;
+  let favouriteColor = styleVar.unusedColor;
+
+
+  console.log("homeColor",homeColor);
 
   if(homePressed){
     homeColor="red";
-    favouriteColor="white";
+    favouriteColor=styleVar.unusedColor;
   }else if(homePressed!=null){
     {
-      homeColor="white";
+      homeColor=styleVar.unusedColor;
       favouriteColor="red";
     }
   }

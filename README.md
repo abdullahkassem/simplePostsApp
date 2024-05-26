@@ -29,7 +29,7 @@ Node.js and npm
 
 ```shell
 git clone https://github.com/abdullahkassem/simplePostsApp my-project-name
-cd my-project-name
+cd my-project-name/my-post-app
 npm install
 ```
 

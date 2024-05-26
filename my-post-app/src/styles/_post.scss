@@ -1,25 +1,56 @@
+@import "variables.module";
+
 .postHeader{
     display: grid;
     // grid-template-rows: 1fr 1fr;
-    // grid-template-columns: repeat(3,1fr);
+    grid-template-columns: max-content 1fr 1fr;
     grid-template-areas: "pp usrName options"
     "pp date options";
     font-size: large;
     img{
         border-radius: 50%;
         grid-area: pp;
+        margin: 0 15px;
     }
     .userName{
         grid-area: usrName;
+        font-size: larger;
+        font-weight: bold;
     }
     .datePosted{
         grid-area: date;
+        font-size: medium;
+        color: $lightGray;
     }
     .options{
         grid-area: options;
         font-size: 9vw;
         align-self: self-end;
-        justify-self: center;
-        margin-bottom: 5px;
+        justify-self: end;
+        margin: 0 10px 3px 0;
+    }
+}
+
+.postContent{
+    margin-top: 15px;
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    .imageContainer{
+        
+        position: relative;
+        width: 450px;
+        height: 300px;
+        margin-left: 30px;
+    }
+
+    .engagmentBar{
+        font-size: small;
+        margin-left: 30px;
+    }
+
+    .postText{
+        font-size: large;
+        margin-top: 10px;
+        margin-left: 5px;
     }
 }
