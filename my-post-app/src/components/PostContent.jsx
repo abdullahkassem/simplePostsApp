@@ -1,6 +1,10 @@
 import Image from "next/image";
 import styleVars from "@/styles/_variables.module.scss"
 
+import LikeSVG from "../../public/LikeSVG"
+import CommentSVG from "../../public/CommentSVG"
+import ShareSVG from "../../public/ShareSVG"
+
 export default function PostContent({imageLink,engagement,caption}) {
 
   // 2 cases: image or no image
@@ -8,7 +12,9 @@ export default function PostContent({imageLink,engagement,caption}) {
 
   return (
     <div className="postContent">
-      <div className="imageContainer">
+      
+
+      {imageLink && (<div className="imageContainer">
           <Image src={imageLink}
           // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           // style={{
@@ -18,12 +24,17 @@ export default function PostContent({imageLink,engagement,caption}) {
           // width={300}
           // height={300}
           fill="true"
+          style={{
+            "border-radius": "20px"
+          }}
           
           alt="Picture with post."/> 
-      </div>
+      </div>)}
       
       <div className="engagmentBar">
-        likes: {engagement.likes} comments: {engagement.comments} shares: {engagement.shares}
+        <LikeSVG width="20px" height="20px"/> {engagement.likes} 
+        <CommentSVG width="20px" height="20px"/> {engagement.comments} 
+        <ShareSVG width="20px" height="20px"/> {engagement.shares}
       </div>
 
       <div className="postText">

@@ -2,10 +2,16 @@ import Post from "./Post";
 
 
 export default function Dummy({data}) {
+// console.log(data[1])
 
   return (
     <div>
-      <Post data={data[0]}/>      
+
+      {data.map((post,index)=>{
+        return (<Post data={post} key={index}/>)
+      })}
+
+      {/* <Post data={data[1]}/>       */}
     </div>
   )
 }

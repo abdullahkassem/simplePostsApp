@@ -6,7 +6,7 @@
             "image_link": "",
             "user": {
                 "username": "generated_user_123",
-                "profile_picture": "https://picsum.photos/seed/1/200/"
+                "profile_picture": "https://picsum.photos/seed/99/200/"
             },
             "engagement": {
                 "likes": 23,
@@ -31,10 +31,10 @@
         {
             "text": "Happy birthday to my best friend!  Here's to many more years of laughter and fun.",
             "created_at": "2024-05-24T12:30:00+09:00",
-            "image_link": "https://example.com/birthday_celebration.jpg",
+            "image_link": "https://picsum.photos/seed/4/336/250/",
             "user": {
                 "username": "true_friend",
-                "profile_picture": "https://example.com/profile_pic2.jpg"
+                "profile_picture": "https://picsum.photos/seed/26/200/"
             },
             "engagement": {
                 "likes": 456,
@@ -48,7 +48,7 @@
             "image_link": "",
             "user": {
                 "username": "foodie",
-                "profile_picture": "https://example.com/profile_pic3.jpg"
+                "profile_picture": "https://picsum.photos/seed/25/200/"
             },
             "engagement": {
                 "likes": 78,
@@ -59,10 +59,10 @@
         {
             "text": "Feeling grateful for all the amazing people in my life. ❤️",
             "created_at": "2024-05-22T20:15:00+01:00",
-            "image_link": "https://example.com/group_photo.jpg",
+            "image_link": "https://picsum.photos/seed/5/400/",
             "user": {
                 "username": "blessed",
-                "profile_picture": "https://example.com/profile_pic4.jpg"
+                "profile_picture": "https://picsum.photos/seed/24/200/"
             },
             "engagement": {
                 "likes": 231,
@@ -73,10 +73,10 @@
         {
             "text": "Just adopted the cutest puppy ever!    #doglover #newpet",
             "created_at": "2024-05-20T15:42:00-03:00",
-            "image_link": "https://example.com/puppy_picture.jpg",
+            "image_link": "https://picsum.photos/seed/6/400/",
             "user": {
                 "username": "furry_friend",
-                "profile_picture": "https://example.com/profile_pics/avatar6.png"
+                "profile_picture": "https://picsum.photos/seed/23/200/"
             },
             "engagement": {
                 "likes": 521,
@@ -87,10 +87,10 @@
         {
             "text": "Learning a new skill this week - coding basics!  #coding #programming",
             "created_at": "2024-05-19T08:10:00+08:00",
-            "image_link": "https://example.com/computer_code.jpg",
+            "image_link": "https://picsum.photos/seed/7/400/",
             "user": {
                 "username": "tech_savvy",
-                "profile_picture": "https://example.com/profile_pics/avatar7.png"
+                "profile_picture": "https://picsum.photos/seed/22/200/"
             },
             "engagement": {
                 "likes": 38,
@@ -101,10 +101,10 @@
         {
             "text": "Celebrating a work anniversary today!    #worklife #achievement",
             "created_at": "2024-05-18T17:30:00-05:00",
-            "image_link": "https://example.com/office_party.jpg",
+            "image_link": "https://picsum.photos/seed/8/400/",
             "user": {
                 "username": "career_climber",
-                "profile_picture": "https://example.com/profile_pics/avatar8.png"
+                "profile_picture": "https://picsum.photos/seed/21/200/"
             },
             "engagement": {
                 "likes": 92,
@@ -115,10 +115,10 @@
         {
             "text": "Caught a beautiful sunset tonight!  #naturephotography #sunset",
             "created_at": "2024-05-17T06:00:00+04:00",
-            "image_link": "https://example.com/sunset_photo.jpg",
+            "image_link": "https://picsum.photos/seed/9/400/",
             "user": {
                 "username": "nature_lover",
-                "profile_picture": "https://example.com/profile_pics/avatar9.png"
+                "profile_picture": "https://picsum.photos/seed/20/200/"
             },
             "engagement": {
                 "likes": 173,
@@ -129,10 +129,10 @@
         {
             "text": "Finally finished this massive puzzle! Feeling accomplished. #puzzles #challenge",
             "created_at": "2024-05-16T23:15:00-02:00",
-            "image_link": "https://example.com/completed_puzzle.jpg",
+            "image_link": "https://picsum.photos/seed/10/400/",
             "user": {
                 "username": "puzzle_master",
-                "profile_picture": "https://example.com/profile_pics/avatar10.png"
+                "profile_picture": "https://picsum.photos/seed/19/200/"
             },
             "engagement": {
                 "likes": 48,
@@ -143,10 +143,10 @@
         {
             "text": "Just saw the new sci-fi movie, Mindbender!    Definitely worth checking out for the mind-blowing plot twist. #scifi #movies",
             "created_at": "2024-05-27T14:00:00+03:00",
-            "image_link": "https://example.com/movie_poster_mindbender.jpg",
+            "image_link": "https://picsum.photos/seed/11/400/",
             "user": {
                 "username": "movie_buff",
-                "profile_picture": "https://example.com/profile_pics/avatar11.png"
+                "profile_picture": "https://picsum.photos/seed/18/200/"
             },
             "engagement": {
                 "likes": 84,
@@ -157,10 +157,10 @@
         {
             "text": "Exploring the bustling streets of Tokyo!    Stay tuned for more updates on my Japan travel blog! #travel #japan",
             "created_at": "2024-05-27T05:45:00-08:00",
-            "image_link": "https://example.com/tokyo_street_photo.jpg",
+            "image_link": "https://picsum.photos/seed/12/400/",
             "user": {
                 "username": "wandering_soul",
-                "profile_picture": "https://example.com/profile_pics/avatar12.png"
+                "profile_picture": "https://picsum.photos/seed/17/200/"
             },
             "engagement": {
                 "likes": 127,
@@ -171,10 +171,10 @@
         {
             "text": "Made these cute planters from recycled jars!    #diy #gardening",
             "created_at": "2024-05-26T20:15:00+07:00",
-            "image_link": "https://example.com/diy_planters.jpg",
+            "image_link": "https://picsum.photos/seed/13/400/",
             "user": {
                 "username": "crafty_cat",
-                "profile_picture": "https://example.com/profile_pics/avatar13.png"
+                "profile_picture": "https://picsum.photos/seed/16/200/"
             },
             "engagement": {
                 "likes": 210,
@@ -185,10 +185,10 @@
         {
             "text": "Did you know today is National Rescue Dog Day?    Consider donating to your local animal shelter to help homeless pups find their forever homes! #rescuedog #nationalrescuedogday",
             "created_at": "2024-05-26T11:30:00-04:00",
-            "image_link": "https://example.com/shelter_dog_photo.jpg",
+            "image_link": "https://picsum.photos/seed/14/400/",
             "user": {
                 "username": "pawsitive_vibes",
-                "profile_picture": "https://example.com/profile_pics/avatar14.png"
+                "profile_picture": "https://picsum.photos/seed/15/200/"
             },
             "engagement": {
                 "likes": 342,
