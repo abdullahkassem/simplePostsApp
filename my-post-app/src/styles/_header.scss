@@ -7,17 +7,31 @@ header {
     left: 0;
     right: 0;
     width: 100vw;
-    height: $headerHeight;
+    height: var(--headerHeight);
     box-sizing: border-box;
 
     padding: 10px 5px 10px 5px;
     background: linear-gradient(to top, #ffffff, #e0e0e0);
-    // border-radius: 5px;
     z-index: 10;
 
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
+    
+    .UserPP {
+        position: relative;
+        height:  calc(var(--headerHeight) - 4vh);
+        width: calc(var(--headerHeight) - 4vh);
+        box-sizing: content-box;    
+        left: 10%;
+    
+        * {
+            border-radius: 50%;
+            border: 2px solid $mainColor;
+            padding: 1px;
+            @include makeClickable();
+        }
+    }
     
     .pageTitle {
         text-align: center;
@@ -28,26 +42,28 @@ header {
         padding: 5px;
         align-self: center;
         border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
 
         @include makeClickable();
     }
 }
 
-.UserPP {
-    position: relative;
+@media (min-width: $tablet-width) {
+    #__next {
+        --headerHeight: 12vh;
+    }
+    header{
+            svg{
+                width: 50px;
+                height: 50px;
+            }
+
+    }
     
-    height: $headerHeight - 4vh;
-    width: $headerHeight - 4vh;
-    box-sizing: content-box;
-
-    left: 10%;
-
-    * {
-        // width: auto;
-        // height: 100%;
-        border-radius: 50%;
-        border: 2px solid $mainColor;
-        padding: 1px;
-        @include makeClickable();
-    }
 }
+
+@media (min-width: $desktop-width){
+    
+} 

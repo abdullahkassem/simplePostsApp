@@ -1,19 +1,36 @@
-@import 'navbar';
-@import 'post';
-@import 'header';
+@import "navbar";
+@import "post";
+@import "header";
 
-body{
-    // margin: 0;
-    margin-top: $headerHeight;
-    padding-bottom: 15%;
+body {
+    > div {
+        margin-top: var(--headerHeight);
+    }
+
+    padding-bottom: 10vh;
     font-size: 2em;
 }
 
-.loadPostFailed{
+.loadPostFailed {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;  /* Center the text within the div */
-  
+    text-align: center; 
+}
+
+@media (min-width: $tablet-width) {
+    
+
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    body {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }

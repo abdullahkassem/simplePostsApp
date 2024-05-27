@@ -1,33 +1,44 @@
-@import 'variables.module';
+@import "variables.module";
 
-nav{
-    display: flex;
+nav {
     overflow: hidden;
     position: fixed;
     bottom: 1%;
     left: 5%;
-    
+
     width: 90%;
-    justify-content: space-around;
-    margin: 0 ;
-    background-color: $bottomNavColor;
     height: 7%;
+    margin: 0;
     padding: 2% 0;
+    z-index: 2;
     border-radius: 15px;
 
-    z-index: 2;
-    
-    .navButton{
+    display: flex;
+    justify-content: space-around;
+    background-color: $bottomNavColor;
+
+    .navButton {
         display: flex;
         flex: auto;
         background-color: transparent;
         border: none;
         justify-content: center;
         align-items: center;
-        >*{
-            flex:auto;
-          
+        > * {
+            flex: auto;
         }
     }
-    
 }
+
+@media (min-width: $tablet-width) {
+    
+    nav{
+        width: 30%;
+        left: 65%;
+        
+    }
+}
+
+@media (min-width: $desktop-width){
+    
+} 
