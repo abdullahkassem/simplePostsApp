@@ -13,7 +13,6 @@ export default function Navbar() {
   let homeColor = styleVar.unusedColor;
   let favouriteColor = styleVar.unusedColor;
 
-
   if(homePressed){
     homeColor="red";
     favouriteColor=styleVar.unusedColor;
@@ -26,7 +25,7 @@ export default function Navbar() {
   
   return (
     <nav>
-        <NavButton path='' myState={{homePressed,setHomePressed}}>
+        <NavButton path='/' myState={{homePressed,setHomePressed}}>
             <HomeSVG fill={homeColor}/>
         </NavButton>
 

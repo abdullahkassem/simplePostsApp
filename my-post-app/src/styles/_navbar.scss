@@ -17,13 +17,16 @@ nav{
 
     z-index: 2;
     
-    button{
+    .navButton{
+        display: flex;
         flex: auto;
         background-color: transparent;
         border: none;
-        .navLogoImg{
-            fill: white;
-            stroke: white;
+        justify-content: center;
+        align-items: center;
+        >*{
+            flex:auto;
+          
         }
     }
     

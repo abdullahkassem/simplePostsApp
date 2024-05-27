@@ -1,18 +1,34 @@
-import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 
 
 export default function NavButton({ path, children, myState }) {
 
-  const router = useRouter();
 
-  const btnHandle = (e) => {
-    // console.log("curpath is",router.pathname)
-    // console.log("path is",path)
+  // const btnHandle = (e) => {
 
+  //   if (myState.homePressed == null) {
+  //     if (path == 'favourites') {
+  //       router.push('/' + path);
+  //       myState.setHomePressed(false);
+  //     } else {
+  //       myState.setHomePressed(true);
+  //     }
+
+
+  //   } else if (myState.homePressed && path == "favourites") {
+  //     router.push('/' + path);
+  //     myState.setHomePressed(false);
+  //   } else if (!myState.homePressed && path == "") {
+  //     router.push('/' + path);
+  //     myState.setHomePressed(true);
+  //   }
+  // }
+
+  const linkHandler = (e) => {
+    
     if (myState.homePressed == null) {
       if (path == 'favourites') {
-        router.push('/' + path);
         myState.setHomePressed(false);
       } else {
         myState.setHomePressed(true);
@@ -20,18 +36,17 @@ export default function NavButton({ path, children, myState }) {
 
 
     } else if (myState.homePressed && path == "favourites") {
-      router.push('/' + path);
       myState.setHomePressed(false);
-    } else if (!myState.homePressed && path == "") {
-      router.push('/' + path);
+    } else if (!myState.homePressed && path == "/") {
       myState.setHomePressed(true);
     }
-
   }
 
+  
+
   return (
-    <button className="navButton" onClick={btnHandle}>
+    <Link href={path} className="navButton" onClick={linkHandler} >
       {children}
-    </button>
+    </Link>
   )
 }

@@ -54,9 +54,6 @@ export default function PostContent({ postID, imageLink, engagement, caption }) 
         <Image src={imageLink}
           alt="Post's Image "
           fill="true"
-          style={{
-            "border-radius": "20px"
-          }}
 
         />
       </div>)}

@@ -60,6 +60,9 @@
         height: 250px;
         // margin-left: 5%;
         @include makeClickable();
+        img{
+            border-radius: 20px;
+        }
     }
 
     .engagmentBar {
