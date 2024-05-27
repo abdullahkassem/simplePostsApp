@@ -1,88 +1,92 @@
 @import "variables.module";
 
-.postContainer{
+.postContainer {
     margin: 10% 0;
-    hr{
+    hr {
         width: 90%;
     }
 }
 
-.postHeader{
+.postHeader {
     display: grid;
     grid-template-columns: max-content 1fr 1fr;
-    
-    grid-template-areas: 
-    "pp usrName ."
-    "pp date options";
+
+    grid-template-areas:
+        "pp usrName ."
+        "pp date options";
 
     font-size: large;
-    img{
+    img {
         border-radius: 50%;
         grid-area: pp;
         margin: 0 15px;
-        @include makeClickable()
+        @include makeClickable();
     }
-    .userName{
+    .userName {
         grid-area: usrName;
         font-size: larger;
         font-weight: bold;
         height: fit-content;
         width: fit-content;
-        
+
         border-radius: 10px;
-        @include makeClickable()
+        @include makeClickable();
     }
-    .datePosted{
+    .datePosted {
         grid-area: date;
         font-size: medium;
         color: $lightGray;
     }
-    .options{
+    .options {
         grid-area: options;
-        
+
         align-self: center;
         justify-self: end;
-        margin-right: 10px ;
+        margin-right: 10px;
         // padding: 3px;
         border-radius: 10px;
-        @include makeClickable()
+        @include makeClickable();
     }
 }
 
-.postContent{
+.postContent {
     margin-top: 15px;
     padding: 0 5%;
     display: grid;
     grid-template-rows: max-content max-content max-content;
-    .imageContainer{
-        
+    .imageContainer {
         position: relative;
         width: 100%;
         height: 250px;
         // margin-left: 5%;
-        @include makeClickable()
+        @include makeClickable();
     }
 
-    .engagmentBar{
+    .engagmentBar {
         font-size: small;
         margin-left: 2%;
         padding: 5px 0px;
         display: flex;
         gap: 10px;
         align-items: center;
-        svg.engageSVG{
+        svg.engageSVG {
             flex: 0 0 auto;
             padding: 5px;
             border-radius: 5px;
             @include makeClickable();
-
         }
     }
 
-    .postText{
+    .postText {
         font-size: large;
         margin-top: 10px;
         margin-left: 2%;
     }
+}
 
+.likePressed {
+    stroke: black;
+    #Dribbble-Light-Preview {
+        fill: red;
+    }
 }

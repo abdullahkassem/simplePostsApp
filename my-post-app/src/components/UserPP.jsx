@@ -4,10 +4,11 @@ import usersProfilePic from "../../public/defaultProfilePic.png"
 export default function UserPP() {
   return (
     <div className="UserPP">
-        <Image src={usersProfilePic} 
+      <Image src={usersProfilePic}
         fill="true"
-        // style={{"border-radius": "50%"}}
-        />
+        alt="Your profile Pic"
+        sizes="100vw"
+      />
     </div>
   )
 }

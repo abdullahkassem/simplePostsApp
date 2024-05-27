@@ -4,38 +4,68 @@ import styleVars from "@/styles/_variables.module.scss"
 import LikeSVG from "../../public/LikeSVG"
 import CommentSVG from "../../public/CommentSVG"
 import ShareSVG from "../../public/ShareSVG"
+import { useEffect, useState } from "react";
 
-export default function PostContent({imageLink,engagement,caption}) {
 
-  // 2 cases: image or no image
+function addItemToLiked(item) {
+  const prevArr = JSON.parse(localStorage.getItem("likesArray"));
+  localStorage.setItem('likesArray', JSON.stringify([...prevArr, item]));
+}
 
+function removeItemFromLiked(item) {
+  const prevArr = JSON.parse(localStorage.getItem("likesArray"));
+  localStorage.setItem('likesArray', JSON.stringify([...prevArr.filter(element => element !== item)]));
+}
+
+export default function PostContent({ postID, imageLink, engagement, caption }) {
+
+  const [liked, setLiked] = useState(null);
+
+  useEffect(() => {
+    // check if array exists and if not create it 
+    const temp = localStorage.getItem("likesArray");
+    // console.log("trying to get element",temp)
+    if (temp == null) {
+      localStorage.setItem("likesArray", "[]");
+    }
+
+  }, []);
+
+
+  const likeHandler = (e) => {
+    console.log("Like Button Pressed")
+    if (!liked) {
+      setLiked((prev) => !prev);
+      addItemToLiked(postID);
+
+    } else if (liked) {
+      setLiked((prev) => !prev);
+      removeItemFromLiked(postID);
+
+    }
+  }
+
+  let likesNum = (liked) ? engagement.likes + 1 : engagement.likes;
 
   return (
     <div className="postContent">
-      
 
       {imageLink && (<div className="imageContainer">
-          <Image src={imageLink}
-          // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          // style={{
-          //   width: '100%',
-          //   height: '100%',
-          // }}
-          // width={300}
-          // height={300}
+        <Image src={imageLink}
+          alt="Post's Image "
           fill="true"
           style={{
             "border-radius": "20px"
           }}
-          
-          alt="Picture with post."/> 
+
+        />
       </div>)}
-      
+
       <div className="engagmentBar">
-      
-        <LikeSVG className="engageSVG" width="20px" height="20px"/> {engagement.likes} 
-        <CommentSVG className="engageSVG" width="20px" height="20px"/> {engagement.comments} 
-        <ShareSVG className="engageSVG" width="20px" height="20px"/> {engagement.shares}
+
+        <LikeSVG className={(liked) ? "engageSVG likePressed" : "engageSVG"} width="20px" height="20px" onClick={likeHandler} /> {likesNum}
+        <CommentSVG className="engageSVG" width="20px" height="20px" /> {engagement.comments}
+        <ShareSVG className="engageSVG" width="20px" height="20px" /> {engagement.shares}
       </div>
 
       <div className="postText">
