@@ -1,4 +1,4 @@
-import Dummy from "@/components/dummy";
+import PostsContainer from "@/components/PostsContainer";
 
 // export async function getServerSideProps() {
 //   // Fetch data from external API
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <main >  
-        <Dummy/>
+        <PostsContainer/>
       </main>
     </>
   );

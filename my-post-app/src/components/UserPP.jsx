@@ -7,7 +7,8 @@ export default function UserPP() {
       <Image src={usersProfilePic}
         fill="true"
         alt="Your profile Pic"
-        sizes="100vw"
+        sizes="100"
+        priority="false"
       />
     </div>
   )
