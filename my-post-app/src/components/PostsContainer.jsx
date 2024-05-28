@@ -17,7 +17,7 @@ export default function PostsContainer({ favouritesPage }) {
     useEffect(() => {
         // On mount attempt to get data
 
-        fetch(`http://localhost:3000/api/getPosts?start=${start}&end=${end}`)
+        fetch(`/api/getPosts?start=${start}&end=${end}`)
             .then((res) => res.json())
             .then((data) => {
                 setData(data);
