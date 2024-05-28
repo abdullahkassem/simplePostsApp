@@ -2,6 +2,7 @@
 @import "post";
 @import "header";
 
+
 body {
     > div {
         margin-top: var(--headerHeight);
@@ -19,6 +20,7 @@ body {
 }
 
 @media (min-width: $tablet-width) {
+    
     body {
         margin-left: 16px;
         margin-right: 16px;
@@ -27,7 +29,13 @@ body {
 
 @media (min-width: $desktop-width) {
     body {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left:  auto;
+        margin-right: auto;
+        max-width: 800px;
+        width: calc(100vw - var(--headerHeight)*2);
     }
+    // main{
+    //     width: 1000px;
+
+    // }
 }

@@ -9,7 +9,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="/social-media.png" />
 
       </Head>
-      <body>
+      <body id="mainBody">
         <Main />
         <NextScript />
       </body>

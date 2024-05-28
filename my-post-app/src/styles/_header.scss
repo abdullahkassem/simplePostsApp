@@ -10,7 +10,7 @@ header {
     height: var(--headerHeight);
     box-sizing: border-box;
 
-    padding: 10px 5px 10px 5px;
+    padding: 0 5px 0 5px;
     background: linear-gradient(to top, #ffffff, #e0e0e0);
     z-index: 10;
 
@@ -36,6 +36,7 @@ header {
     .pageTitle {
         text-align: center;
         font-size: 3rem;
+        color: $mainColor;
     }
 
     svg {
@@ -52,7 +53,8 @@ header {
 }
 
 @media (min-width: $tablet-width) {
-    #__next {
+
+    #mainBody {
         --headerHeight: 12vh;
     }
     header{
@@ -66,5 +68,12 @@ header {
 }
 
 @media (min-width: $desktop-width){
-    
+    #mainBody {
+        --headerHeight: 10vh;
+    }
+    header{
+        svg{
+            display: none;
+        }
+    }
 } 

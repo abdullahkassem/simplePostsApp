@@ -81,8 +81,11 @@
             align-items: center;
             gap: 1vw;
             svg.engageSVG {
+                
                 width: 4vw;
+                max-width: 30px;
                 height: 4vw;
+                max-height: 30px;
                 flex: 0 0 auto;
                 
                 border-radius: 5px;
