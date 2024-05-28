@@ -1,24 +1,9 @@
 import Image from "next/image"
 import THreeDotsSVG from "../../public/ThreeDotsSVG.jsx"
 import placeHolderImg from "../../public/placeHolderImg.svg"
+import { getHoursPassed } from "@/util/otherUtil.js";
 
-// gets date passed since passed date
-function getHoursPassed(dateStr) {
-    let dateInMs;
-
-    try {
-        dateInMs = Date.parse(dateStr);
-    } catch (error) {
-        return 0;
-    }
-
-    const diffInMilliseconds = Date.now() - dateInMs;
-
-    const diffInHours = diffInMilliseconds / (1000 * 60 * 60);
-
-    return Math.floor(diffInHours);
-}
-
+// Depending on usePlaceHolder either a placeholder post header will be loaded or the actual header content
 export default function PostHeader({ usePlaceHolder, userName, date, profilePic }) {
 
 
@@ -26,12 +11,15 @@ export default function PostHeader({ usePlaceHolder, userName, date, profilePic 
 
     let dateString = "Cannot determine time of post.";
 
-    if (hoursPassed == 0)
+    if (hoursPassed < 0)
+        dateString = "Post from the future ??!! 🤔";
+    else if (hoursPassed == 0)
         dateString = "Less than an hour ago";
     else if (hoursPassed <= 24)
         dateString = hoursPassed + " hours ago";
     else
         dateString = new Date(date).toLocaleString()
+    
     if (!usePlaceHolder)
         return (
             <div className="postHeader">

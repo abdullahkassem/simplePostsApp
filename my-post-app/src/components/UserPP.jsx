@@ -2,7 +2,7 @@ import Image from "next/image";
 import usersProfilePic from "../../public/defaultProfilePic.png"
 import placeHolderImg from "../../public/placeHolderImg.svg"
 
-
+//user profile picture component
 export default function UserPP() {
   return (
     <div className="UserPP">

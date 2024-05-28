@@ -11,6 +11,7 @@ export default function Navbar() {
 
   const router = useRouter();
   
+  // true if at home page, this controls navigation and the buttons color
   const [homePressed,setHomePressed] =useState(null);
   
   // For the initial Load

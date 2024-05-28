@@ -2,6 +2,7 @@
 import PostHeader from "@/components/PostHeader"
 import PostContent from "@/components/PostContent"
 
+// component that display posts or there place holders.
 export default function Post({ usePlaceHolder, data }) {
 
   if (!usePlaceHolder)

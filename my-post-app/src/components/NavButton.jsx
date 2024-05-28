@@ -5,7 +5,7 @@ import Link from 'next/link';
 export default function NavButton({ path, children, myState }) {
 
 
-
+  // makes sure correct state is set
   const linkHandler = (e) => {
     
     if (myState.homePressed == null) {

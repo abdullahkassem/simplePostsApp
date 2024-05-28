@@ -1,5 +1,4 @@
 import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
 import Header from '@/components/Header'
 import { useRouter } from 'next/router'
  

@@ -3,7 +3,7 @@ import Layout from "./layout";
 import "@/styles/global.scss"
 import ErrorBoundary from "@/components/ErrorBoundry";
 
-
+//loading font
 import { Raleway } from 'next/font/google'
  
 const myFont = Raleway({
@@ -12,6 +12,7 @@ const myFont = Raleway({
 })
 
 export default function App({ Component, pageProps }) {
+  // This will be wrapped around every page.
 
   return (
     <div className={myFont.className}>
@@ -22,7 +23,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <ErrorBoundary>
         <Layout>
-          <Component {...pageProps} />
+          <Component {...pageProps} />  
         </Layout>
       </ErrorBoundary>
     </div>

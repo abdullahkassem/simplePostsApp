@@ -7,22 +7,24 @@ import ShareSVG from "../../public/ShareSVG"
 import { useEffect, useState } from "react";
 import { addItemToLiked, removeItemFromLiked, searchForItem } from "@/util/localStorageHelpers";
 
-
-export default function PostContent({ usePlaceHolder, postID, imageLink, caption,
+// Depending on usePlaceHolder either a placeholder post content will be loaded or the actual content
+export default function PostContent({ usePlaceHolder, postID, imageLink,
 	engagement = {
 		"likes": 0,
 		"comments": 0,
 		"shares": 0
-	} }) {
+	}, caption }) {
 
-	if(usePlaceHolder){
-		imageLink="anything"
+	// dummy value just for logic below
+	if (usePlaceHolder) {	
+		imageLink = "anything"
 	}
 
+	// show if post has been liked or not
 	const [liked, setLiked] = useState(null);
 
 	useEffect(() => {
-		// check if array exists and if not create it 
+		// check if local array exists and if not, create it 
 		const temp = localStorage.getItem("likesArray");
 		if (temp == null) {
 			localStorage.setItem("likesArray", "[]");
@@ -36,9 +38,9 @@ export default function PostContent({ usePlaceHolder, postID, imageLink, caption
 
 	}, []);
 
-
+	// toggle like status for post
 	const likeHandler = (e) => {
-		console.log("Like Button Pressed")
+		
 		if (!liked) {
 			setLiked((prev) => !prev);
 			addItemToLiked(postID);
@@ -51,11 +53,15 @@ export default function PostContent({ usePlaceHolder, postID, imageLink, caption
 	}
 
 	let likesNum = (liked) ? engagement.likes + 1 : engagement.likes;
+
+	// Checks if post has an image or not, because posts without images have slightly different layout.
 	let engageBarClass = (imageLink) ? "engagmentBar" : "engagmentBar EngageNoImage";
 
 	let imgLinkToBeUsed = imageLink;
 	let imgClass = "imageContainer";
 
+	// if we are loading a placeGolder (i.e. usePlaceHolder == true)
+	// we need to load placeholder image and use appropriate class
 	if (usePlaceHolder) {
 		imgLinkToBeUsed = placeHolderImg;
 		imgClass = "imageContainer postPlaceHolder"
@@ -64,15 +70,12 @@ export default function PostContent({ usePlaceHolder, postID, imageLink, caption
 	return (
 		<div className="postContent">
 
-
-
 			{imageLink && (<div className={imgClass}>
 				<Image src={imgLinkToBeUsed}
 					alt="Post's Image"
 					fill="true"
-					priority={(usePlaceHolder)?true:false}
+					priority={(usePlaceHolder) ? true : false}
 					sizes="90vw"
-					// placeholder="blur"
 					style={{
 						"objectFit": "cover"
 					}}

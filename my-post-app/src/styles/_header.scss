@@ -17,14 +17,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
-    
+
     .UserPP {
         position: relative;
-        height:  calc(var(--headerHeight) - 4vh);
+        height: calc(var(--headerHeight) - 4vh);
         width: calc(var(--headerHeight) - 4vh);
-        box-sizing: content-box;    
+        box-sizing: content-box;
         left: 10%;
-    
+
         * {
             border-radius: 50%;
             border: 2px solid $mainColor;
@@ -32,13 +32,21 @@ header {
             @include makeClickable();
         }
     }
-    
+
     .pageTitle {
         text-align: center;
-        font-size: 2rem;
         color: $mainColor;
-        font-weight: bold;
+
+        font-size: 2.5em;
+        font-weight: bolder;
+        background-image: linear-gradient(to bottom, $mainColor, $heartColor);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // text-shadow: 2px 2px 1px $secondaryColor;
     }
+
+    
 
     svg {
         justify-self: end;
@@ -54,27 +62,27 @@ header {
 }
 
 @media (min-width: $tablet-width) {
-
     #mainBody {
         --headerHeight: 12vh;
     }
-    header{
-            svg{
-                width: 50px;
-                height: 50px;
-            }
-
+    header {
+        .pageTitle {
+            font-size: 3em;
+        }
+        svg {
+            width: 50px;
+            height: 50px;
+        }
     }
-    
 }
 
-@media (min-width: $desktop-width){
+@media (min-width: $desktop-width) {
     #mainBody {
         --headerHeight: 10vh;
     }
-    header{
-        svg{
+    header {
+        svg {
             display: none;
         }
     }
-} 
+}

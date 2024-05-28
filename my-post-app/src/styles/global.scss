@@ -11,12 +11,26 @@ body {
     padding-bottom: 10vh;
 }
 
-.loadPostFailed {
+.fullScreenText {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.TryAgainButton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    padding: 2% 3%;
+    background-color: $mainColor;
+    color: white;
+    font-weight: bold;
 }
 
 @media (min-width: $tablet-width) {
