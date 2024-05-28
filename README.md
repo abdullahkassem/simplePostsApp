@@ -1,6 +1,7 @@
 # simplePostsApp
 ## Description
 
+[Live Demo](https://simple-posts-4f5mlnlz4-abdullah-kassems-projects.vercel.app)
 
 A simple SPA Next.js app for displaying posts. It has 2 main pages, a post listing page and a favorites posts page and the user should be able to favorite posts.
 
