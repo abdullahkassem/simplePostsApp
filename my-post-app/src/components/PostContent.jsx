@@ -42,7 +42,7 @@ export default function PostContent({ postID, imageLink, engagement, caption }) 
 	}
 
 	let likesNum = (liked) ? engagement.likes + 1 : engagement.likes;
-	let engageBarClass = (imageLink)? "engagmentBar": "engagmentBar EngageNoImage";
+	let engageBarClass = (imageLink) ? "engagmentBar" : "engagmentBar EngageNoImage";
 
 	return (
 		<div className="postContent">
@@ -51,15 +51,26 @@ export default function PostContent({ postID, imageLink, engagement, caption }) 
 				<Image src={imageLink}
 					alt="Post's Image "
 					fill="true"
-					priority="false"
+					priority={false}
 				/>
 			</div>)}
 
 			<div className={engageBarClass}>
+				<div className="engageSVGContainer">
+					<LikeSVG className={(liked) ? "engageSVG likePressed" : "engageSVG"} onClick={likeHandler} />
+					<div>{likesNum}</div>
+				</div>
 
-				<LikeSVG className={(liked) ? "engageSVG likePressed" : "engageSVG"} onClick={likeHandler} /> {likesNum}
-				<CommentSVG className="engageSVG" /> {engagement.comments}
-				<ShareSVG className="engageSVG" /> {engagement.shares}
+				<div className="engageSVGContainer">
+					<CommentSVG className="engageSVG" />
+					<div>{engagement.comments}</div>
+
+				</div>
+
+				<div className="engageSVGContainer">
+					<ShareSVG className="engageSVG" />
+					<div>{engagement.shares}</div>
+				</div>
 			</div>
 
 			<div className="postText">

@@ -1,7 +1,8 @@
 @import "variables.module";
 
 .postContainer {
-    margin: 10% 0;
+    margin: 5vh 0;
+    
     hr {
         width: 90%;
     }
@@ -15,7 +16,6 @@
         "pp usrName ."
         "pp date options";
 
-    font-size: large;
     img {
         border-radius: 50%;
         grid-area: pp;
@@ -24,17 +24,18 @@
     }
     .userName {
         grid-area: usrName;
-        font-size: larger;
+        font-size: 1.3rem;
         font-weight: bold;
         height: fit-content;
         width: fit-content;
+        padding-top: 0.5rem;
 
         border-radius: 10px;
         @include makeClickable();
     }
     .datePosted {
         grid-area: date;
-        font-size: medium;
+        font-size: 0.9rem;
         color: $lightGray;
     }
     .options {
@@ -68,31 +69,46 @@
     }
 
     .engagmentBar {
-        font-size: small;
+        font-size: 0.9rem;
         margin-left: 2%;
-        padding: 5px 0px;
+        margin-top: 1.5vh;
         display: flex;
-        gap: 10px;
+        gap: 2vw;
         align-items: center;
-        svg.engageSVG {
-            width: 4vw;
-            height: 4vw;
+        .engageSVGContainer{
             flex: 0 0 auto;
-            padding: 5px;
-            border-radius: 5px;
-            @include makeClickable();
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+            svg.engageSVG {
+                width: 4vw;
+                height: 4vw;
+                flex: 0 0 auto;
+                
+                border-radius: 5px;
+                @include makeClickable();
+            }
+
+            div{
+                font-size: 1rem;
+            }
         }
     }
     
-    .EngageNoImage{
-        
-        grid-row: 2 / 4;
-    }
-
+    
     .postText {
-        font-size: large;
-        margin-top: 10px;
+        font-size: 1.15rem;
+        margin-top: 3vh;
         margin-left: 2%;
+    }
+    
+    .EngageNoImage{
+        grid-row: 2 / 4;
+    
+        +*{
+            // border: 2px solid red;
+            margin-top: 0%;
+        }
     }
 }
 

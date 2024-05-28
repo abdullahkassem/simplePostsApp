@@ -1,6 +1,10 @@
 # simplePostsApp
 ## Description
+
+
 A simple SPA Next.js app for displaying posts. It has 2 main pages, a post listing page and a favourite posts page and the user should be able to favourite posts.
+
+This is my first Next.js app. I learnt Next.js and made this app, all in the span of 7 days.
 
 ## Background/Motivation
 - My target is to build a Single Page Application (SPA) using Next.js

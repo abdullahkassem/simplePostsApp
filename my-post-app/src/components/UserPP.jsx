@@ -8,7 +8,7 @@ export default function UserPP() {
         fill="true"
         alt="Your profile Pic"
         sizes="100"
-        priority="false"
+        priority={false}
       />
     </div>
   )

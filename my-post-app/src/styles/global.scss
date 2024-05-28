@@ -6,9 +6,8 @@ body {
     > div {
         margin-top: var(--headerHeight);
     }
-
+    font-family: Garamond;
     padding-bottom: 10vh;
-    font-size: 2em;
 }
 
 .loadPostFailed {
@@ -16,12 +15,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; 
+    text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-    
-
     body {
         margin-left: 16px;
         margin-right: 16px;
