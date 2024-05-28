@@ -15,6 +15,10 @@ export default function PostContent({ usePlaceHolder, postID, imageLink, caption
 		"shares": 0
 	} }) {
 
+	if(usePlaceHolder){
+		imageLink="anything"
+	}
+
 	const [liked, setLiked] = useState(null);
 
 	useEffect(() => {
@@ -60,13 +64,13 @@ export default function PostContent({ usePlaceHolder, postID, imageLink, caption
 	return (
 		<div className="postContent">
 
-			
+
 
 			{imageLink && (<div className={imgClass}>
 				<Image src={imgLinkToBeUsed}
 					alt="Post's Image"
 					fill="true"
-					priority={false}
+					priority={(usePlaceHolder)?true:false}
 					sizes="90vw"
 					// placeholder="blur"
 					style={{
