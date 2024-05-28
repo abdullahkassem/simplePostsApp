@@ -14,12 +14,12 @@ export default function Navbar() {
   let favouriteColor = styleVar.unusedColor;
 
   if(homePressed){
-    homeColor="red";
+    homeColor=styleVar.bottomNavColor;
     favouriteColor=styleVar.unusedColor;
   }else if(homePressed!=null){
     {
       homeColor=styleVar.unusedColor;
-      favouriteColor="red";
+      favouriteColor=styleVar.bottomNavColor;
     }
   }
   

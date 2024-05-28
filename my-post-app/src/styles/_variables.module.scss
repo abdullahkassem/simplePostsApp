@@ -25,6 +25,7 @@ $postImageWidth: 300;
     unusedColor:$unusedColor;
     postImageHeight:$postImageHeight;
     postImageWidth:$postImageWidth;
+    bottomNavColor:$bottomNavColor;
 }
 
 @mixin makeClickable{

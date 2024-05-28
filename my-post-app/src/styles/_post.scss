@@ -53,14 +53,16 @@
     margin-top: 15px;
     padding: 0 5%;
     display: grid;
-    grid-template-rows: max-content max-content max-content;
+    grid-template-rows: auto auto auto;
     .imageContainer {
         position: relative;
+        
         width: 100%;
-        height: 250px;
-        // margin-left: 5%;
+        height: auto;
+        aspect-ratio: 1.6;
+        
         @include makeClickable();
-        img{
+        img{  
             border-radius: 20px;
         }
     }
@@ -73,11 +75,18 @@
         gap: 10px;
         align-items: center;
         svg.engageSVG {
+            width: 4vw;
+            height: 4vw;
             flex: 0 0 auto;
             padding: 5px;
             border-radius: 5px;
             @include makeClickable();
         }
+    }
+    
+    .EngageNoImage{
+        
+        grid-row: 2 / 4;
     }
 
     .postText {
@@ -93,3 +102,11 @@
         fill: red;
     }
 }
+
+@media (min-width: $tablet-width) {
+    
+}
+
+@media (min-width: $desktop-width){
+    
+} 

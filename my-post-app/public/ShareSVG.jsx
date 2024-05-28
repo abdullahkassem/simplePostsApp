@@ -4,8 +4,7 @@ function Icon(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="512"
-      height="512"
+
       data-name="Isolation Mode"
       viewBox="0 0 24 24"
       {...props}
