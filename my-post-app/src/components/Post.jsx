@@ -2,12 +2,22 @@
 import PostHeader from "@/components/PostHeader"
 import PostContent from "@/components/PostContent"
 
-export default function Post({ data }) {
-  return (
-    <div className="postContainer">
-      <PostHeader userName={data.user.username} date={data.created_at} profilePic={data.user.profile_picture} />
-      <PostContent postID={data.postID} imageLink={data.image_link} engagement={data.engagement} caption={data.text} />
-      <hr />
-    </div>
-  )
+export default function Post({ usePlaceHolder, data }) {
+
+  if (!usePlaceHolder)
+    return (
+      <div className="postContainer">
+        <PostHeader usePlaceHolder={usePlaceHolder} userName={data.user.username} date={data.created_at} profilePic={data.user.profile_picture} />
+        <PostContent usePlaceHolder={usePlaceHolder} postID={data.postID} imageLink={data.image_link} engagement={data.engagement} caption={data.text} />
+        <hr />
+      </div>
+    )
+  else
+    return (
+      <div className="postContainer">
+        <PostHeader usePlaceHolder={usePlaceHolder}/>
+        <PostContent usePlaceHolder={usePlaceHolder}  />
+        <hr />
+      </div>
+    )
 }

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import styleVars from "@/styles/_variables.module.scss"
 
+import placeHolderImg from "../../public/placeHolderImg.svg"
 import LikeSVG from "../../public/LikeSVG"
 import CommentSVG from "../../public/CommentSVG"
 import ShareSVG from "../../public/ShareSVG"
@@ -8,7 +8,12 @@ import { useEffect, useState } from "react";
 import { addItemToLiked, removeItemFromLiked, searchForItem } from "@/util/localStorageHelpers";
 
 
-export default function PostContent({ postID, imageLink, engagement, caption }) {
+export default function PostContent({ usePlaceHolder, postID, imageLink, caption,
+	engagement = {
+		"likes": 0,
+		"comments": 0,
+		"shares": 0
+	} }) {
 
 	const [liked, setLiked] = useState(null);
 
@@ -44,39 +49,51 @@ export default function PostContent({ postID, imageLink, engagement, caption }) 
 	let likesNum = (liked) ? engagement.likes + 1 : engagement.likes;
 	let engageBarClass = (imageLink) ? "engagmentBar" : "engagmentBar EngageNoImage";
 
+	let imgLinkToBeUsed = imageLink;
+	let imgClass = "imageContainer";
+
+	if (usePlaceHolder) {
+		imgLinkToBeUsed = placeHolderImg;
+		imgClass = "imageContainer postPlaceHolder"
+	}
+
 	return (
 		<div className="postContent">
 
-			{imageLink && (<div className="imageContainer">
-				<Image src={imageLink}
+			
+
+			{imageLink && (<div className={imgClass}>
+				<Image src={imgLinkToBeUsed}
 					alt="Post's Image"
 					fill="true"
 					priority={false}
-					objectFit="cover"
+					sizes="90vw"
+					// placeholder="blur"
+					style={{
+						"objectFit": "cover"
+					}}
 				/>
 			</div>)}
 
 			<div className={engageBarClass}>
 				<div className="engageSVGContainer">
 					<LikeSVG className={(liked) ? "engageSVG likePressed" : "engageSVG"} onClick={likeHandler} />
-					<div>{likesNum}</div>
+					{!usePlaceHolder && <div>{likesNum}</div>}
 				</div>
 
 				<div className="engageSVGContainer">
 					<CommentSVG className="engageSVG" />
-					<div>{engagement.comments}</div>
+					{!usePlaceHolder && <div>{engagement.comments}</div>}
 
 				</div>
 
 				<div className="engageSVGContainer">
 					<ShareSVG className="engageSVG" />
-					<div>{engagement.shares}</div>
+					{!usePlaceHolder && <div>{engagement.shares}</div>}
 				</div>
 			</div>
 
-			<div className="postText">
-				{caption}
-			</div>
+			{!usePlaceHolder && <div className="postText">{caption}</div>}
 
 		</div>
 	)

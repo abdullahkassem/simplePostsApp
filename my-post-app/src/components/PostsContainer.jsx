@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
-import Post from "./Post";
+import PostPlaceHolder from "./PostPlaceHolder";
 import { searchForItem } from "@/util/localStorageHelpers";
-
+import dynamic from "next/dynamic";
 
 export default function PostsContainer({favouritesPage}) {
-    let start=0,end=15;
+    
+  let start=0,end=15;
 
     const [data, setData] = useState(null);
-    // -1-> error,0->loading, 1-> Success
+    
+    // Holds the state of the data: -1-> error,0->loading, 1-> Success
     const [status, setStatus] = useState(0);  
 
     useEffect(() => {
-        console.log("Attempting to get data")
+        // On mount attempt to get data
 
         fetch(`http://localhost:3000/api/getPosts?start=${start}&end=${end}`)
             .then((res) => res.json())
@@ -28,23 +30,28 @@ export default function PostsContainer({favouritesPage}) {
     if (status == -1) {
         console.error("Failed to Fetch data.");
         return (<div className="loadPostFailed">Failed to fetch posts...</div>)
-    } else if (status == 0)
+    } 
+    else if (status == 0)
         return (<div className="loadPostFailed">Loading...</div>)
 
 
-    if (!data) return <p>No profile data</p>
+    if (!data) return <p className="loadPostFailed">No profile data</p>
+
+    const DynamicPost = dynamic(() => import("./Post"), {
+      loading: () => <PostPlaceHolder/>,
+    })
 
     return (
         <div>
           {favouritesPage ? (
             data.map((post, index) => {
                 if(searchForItem(post.postID) != -1)
-                    return(<Post data={post} key={index} />)
+                    return(<DynamicPost data={post} key={index} />)
             }
             )
           ) : (
             data.map((post, index) => (
-              <Post data={post} key={index} />
+              <DynamicPost data={post} key={index} />
             ))
           )}
         </div>
