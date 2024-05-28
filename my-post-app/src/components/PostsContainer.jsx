@@ -4,7 +4,7 @@ import { searchForItem } from "@/util/localStorageHelpers";
 
 
 export default function PostsContainer({favouritesPage}) {
-    let start=0,end=5;
+    let start=0,end=15;
 
     const [data, setData] = useState(null);
     // -1-> error,0->loading, 1-> Success

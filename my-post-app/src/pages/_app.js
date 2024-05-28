@@ -4,9 +4,9 @@ import "@/styles/global.scss"
 import ErrorBoundary from "@/components/ErrorBoundry";
 
 
-import { Roboto } from 'next/font/google'
+import { Raleway } from 'next/font/google'
  
-const myFont = Roboto({
+const myFont = Raleway({
   weight: '400',
   subsets: ['latin'],
 })

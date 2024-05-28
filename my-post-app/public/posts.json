@@ -19,7 +19,7 @@
             "postID": "1",
             "text": "Just finished an amazing hike! Feeling refreshed and invigorated by nature.",
             "created_at": "2024-05-25T18:00:00+02:00",
-            "image_link": "https://picsum.photos/seed/2/400/",
+            "image_link": "https://picsum.photos/seed/2/800/",
             "user": {
                 "username": "adventure_seeker",
                 "profile_picture": "https://picsum.photos/seed/3/200/"
@@ -34,7 +34,7 @@
             "postID": "2",
             "text": "Happy birthday to my best friend!  Here's to many more years of laughter and fun.",
             "created_at": "2024-05-24T12:30:00+09:00",
-            "image_link": "https://picsum.photos/seed/4/336/250/",
+            "image_link": "https://picsum.photos/seed/4/800/",
             "user": {
                 "username": "true_friend",
                 "profile_picture": "https://picsum.photos/seed/26/200/"
@@ -64,7 +64,7 @@
             "postID": "4",
             "text": "Feeling grateful for all the amazing people in my life. ❤️",
             "created_at": "2024-05-22T20:15:00+01:00",
-            "image_link": "https://picsum.photos/seed/5/400/",
+            "image_link": "https://picsum.photos/seed/5/800/",
             "user": {
                 "username": "blessed",
                 "profile_picture": "https://picsum.photos/seed/24/200/"
@@ -79,7 +79,7 @@
             "postID": "5",
             "text": "Just adopted the cutest puppy ever!    #doglover #newpet",
             "created_at": "2024-05-20T15:42:00-03:00",
-            "image_link": "https://picsum.photos/seed/6/400/",
+            "image_link": "https://picsum.photos/seed/6/800/",
             "user": {
                 "username": "furry_friend",
                 "profile_picture": "https://picsum.photos/seed/23/200/"
@@ -94,7 +94,7 @@
             "postID": "6",
             "text": "Learning a new skill this week - coding basics!  #coding #programming",
             "created_at": "2024-05-19T08:10:00+08:00",
-            "image_link": "https://picsum.photos/seed/7/400/",
+            "image_link": "https://picsum.photos/seed/7/800/",
             "user": {
                 "username": "tech_savvy",
                 "profile_picture": "https://picsum.photos/seed/22/200/"
@@ -109,7 +109,7 @@
             "postID": "7",
             "text": "Celebrating a work anniversary today!    #worklife #achievement",
             "created_at": "2024-05-18T17:30:00-05:00",
-            "image_link": "https://picsum.photos/seed/8/400/",
+            "image_link": "https://picsum.photos/seed/8/800/",
             "user": {
                 "username": "career_climber",
                 "profile_picture": "https://picsum.photos/seed/21/200/"
@@ -124,7 +124,7 @@
             "postID": "8",
             "text": "Caught a beautiful sunset tonight!  #naturephotography #sunset",
             "created_at": "2024-05-17T06:00:00+04:00",
-            "image_link": "https://picsum.photos/seed/9/400/",
+            "image_link": "https://picsum.photos/seed/9/800/",
             "user": {
                 "username": "nature_lover",
                 "profile_picture": "https://picsum.photos/seed/20/200/"
@@ -139,7 +139,7 @@
             "postID": "9",
             "text": "Finally finished this massive puzzle! Feeling accomplished. #puzzles #challenge",
             "created_at": "2024-05-16T23:15:00-02:00",
-            "image_link": "https://picsum.photos/seed/10/400/",
+            "image_link": "https://picsum.photos/seed/10/800/",
             "user": {
                 "username": "puzzle_master",
                 "profile_picture": "https://picsum.photos/seed/19/200/"
@@ -154,7 +154,7 @@
             "postID": "10",
             "text": "Just saw the new sci-fi movie, Mindbender!    Definitely worth checking out for the mind-blowing plot twist. #scifi #movies",
             "created_at": "2024-05-27T14:00:00+03:00",
-            "image_link": "https://picsum.photos/seed/11/400/",
+            "image_link": "https://picsum.photos/seed/11/800/",
             "user": {
                 "username": "movie_buff",
                 "profile_picture": "https://picsum.photos/seed/18/200/"
@@ -169,7 +169,7 @@
             "postID": "11",
             "text": "Exploring the bustling streets of Tokyo!    Stay tuned for more updates on my Japan travel blog! #travel #japan",
             "created_at": "2024-05-27T05:45:00-08:00",
-            "image_link": "https://picsum.photos/seed/12/400/",
+            "image_link": "https://picsum.photos/seed/12/800/",
             "user": {
                 "username": "wandering_soul",
                 "profile_picture": "https://picsum.photos/seed/17/200/"
@@ -184,7 +184,7 @@
             "postID": "12",
             "text": "Made these cute planters from recycled jars!    #diy #gardening",
             "created_at": "2024-05-26T20:15:00+07:00",
-            "image_link": "https://picsum.photos/seed/13/400/",
+            "image_link": "https://picsum.photos/seed/13/800/",
             "user": {
                 "username": "crafty_cat",
                 "profile_picture": "https://picsum.photos/seed/16/200/"
@@ -199,7 +199,7 @@
             "postID": "13",
             "text": "Did you know today is National Rescue Dog Day?    Consider donating to your local animal shelter to help homeless pups find their forever homes! #rescuedog #nationalrescuedogday",
             "created_at": "2024-05-26T11:30:00-04:00",
-            "image_link": "https://picsum.photos/seed/14/400/",
+            "image_link": "https://picsum.photos/seed/14/800/",
             "user": {
                 "username": "pawsitive_vibes",
                 "profile_picture": "https://picsum.photos/seed/15/200/"

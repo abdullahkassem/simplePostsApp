@@ -49,9 +49,10 @@ export default function PostContent({ postID, imageLink, engagement, caption }) 
 
 			{imageLink && (<div className="imageContainer">
 				<Image src={imageLink}
-					alt="Post's Image "
+					alt="Post's Image"
 					fill="true"
 					priority={false}
+					objectFit="cover"
 				/>
 			</div>)}
 
